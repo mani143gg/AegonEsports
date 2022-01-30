@@ -13,20 +13,6 @@
 </head>
 <body>
 <section class="area">
-    <!-- <div class="card">
-        <label for="email">email:email@email.com</label>
-        <label for="email">Phone:9696969696</label>
-        <label for="email">Clan Tag:JErs</label>
-        <label for="email">Clan Name:Name</label>
-    </div>
-
-    <div class="card1" >
-        <div class="player-card">
-        <img class="player-img" src="/assets/test.jpg" alt=""  >
-        <p class="player-tag">clantagwithname</p>
-        </div>
-    </div> -->
-
     <div class="list-group">
   <a href="#" id="btnlist1" class="list-group-item list-group-item-action " onclick="showPanel('leader-info')">Clan Leader</a>
   <a href="#" id="btnlist1" class="list-group-item list-group-item-action" onclick="showPanel('player-info')">Clan Players</a>
@@ -56,18 +42,19 @@
         
 </div>
 </div>
-
+<!-- form Add player  -->
 <div id="add-player" class="login-box">
   <h2>Login</h2>
   <form>
     <div class="user-box">
       <input type="text" name="" required="">
-      <label>Username</label>
+      <label>InGame Name</label>
     </div>
     <div class="user-box">
-      <input type="password" name="" required="">
-      <label>Password</label>
+      <input type="text" name="" required="">
+      <label>Game Id</label>
     </div>
+    
     <a href="#">
       <span></span>
       <span></span>
@@ -113,7 +100,7 @@
     currentvalue = document.getElementById('onoff').value;
         if(currentvalue == "Off"){
             document.getElementById("onoff").value="On";
-            document.getElementById("player-info").style.backgroundColor = "rgb(106, 228, 106)";
+            document.getElementById("player-info").style.backgroundColor = "rgba(0,0,0,.5)";
         }else{
             document.getElementById("onoff").value="Off";
             document.getElementById("player-info").style.backgroundColor = "#ff4545";
